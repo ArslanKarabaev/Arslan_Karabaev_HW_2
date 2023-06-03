@@ -12,38 +12,21 @@ public class Main {
         if (age >= 20 && age < 45 && temperature >= -20 && temperature < 30
                 || age < 20 && temperature >= 0 && temperature < 28
                 || age > 45 && temperature >= -10 && temperature < 25) {
-            return "true";
-        } else return "false";
+            return "Можно идти гулять";
+        } else return "Оставайтесь дома";
     }
 
     public static void main(String[] args) {
-        if (chek(30, 20).equals("true"))
-            System.out.println("Можно идти гулять");
-        else System.out.println("Оставайтесь дома");
-
-        if (chek(18, 15).equals("true"))
-            System.out.println("Можно идти гулять");
-        else System.out.println("Оставайтесь дома");
-
-        if (chek(50, 20).equals("true"))
-            System.out.println("Можно идти гулять");
-        else System.out.println("Оставайтесь дома");
-
-
-        if (chek(5, 30).equals("true"))
-            System.out.println("Можно идти гулять");
-        else System.out.println("Оставайтесь дома");
-
-        if (chek(65, -20).equals("true"))
-            System.out.println("Можно идти гулять");
-        else System.out.println("Оставайтесь дома");
+        System.out.println(chek(30, 20));
+        System.out.println(chek(18, 15));
+        System.out.println(chek(50, 20));
+        System.out.println(chek(5, 30));
+        System.out.println(chek(65, -20));
 
 
         // дз на сообразительность
 
-        if (chek(generateRandomAge(), 10).equals("true"))
-            System.out.println("Можно идти гулять");
-        else System.out.println("Оставайтесь дома");
+        System.out.println(chek(generateRandomAge(), 10));
 
     }
 }
